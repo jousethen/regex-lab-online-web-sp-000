@@ -26,5 +26,9 @@ if text.match(/^[A-Z][a-zA-Z ,']*[.]$/)
 end
 
 def valid_phone_number?(phone)
-
+if phone.match(/^\(?[0-9]{3}\)?[- ]?[0-9]{3}[- ]?\d{4}/)
+  return true
+else 
+  return false
+end
 end
